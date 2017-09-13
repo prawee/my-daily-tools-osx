@@ -1,5 +1,7 @@
 ### Project
 This repository is my lock for working every day.
 
-## How to
-    Node
+## Table of Contents
+- [Applications](#applications)
+    - [Brew](#brew)
+    - [Node](#node)
