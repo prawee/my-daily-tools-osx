@@ -1,16 +1,16 @@
-### Node
+## Node
 
-## Check version
+### Check version
 ```bash
 $ node -v
 ```
 
-## Origin remove
+### Origin remove
 ```bash
 $ sudo rm -rf /usr/local/{lib/node{,/.npm,_modules},bin,share/man}/{npm*,node*,man1/node*}
 ```
 
-## Install 
+### Install 
 ```bash
 $ brew install node
 $ brew link --overwrite node
