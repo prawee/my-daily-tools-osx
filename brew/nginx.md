@@ -1,4 +1,4 @@
-## Node
+## Nginx
 
 ### Check version
 ```bash
