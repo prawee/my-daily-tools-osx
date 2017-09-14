@@ -7,4 +7,5 @@ This repository is my lock for working every day.
     - [Node](https://github.com/prawee/osx/blob/master/brew/node.md)
     - [Nginx](https://github.com/prawee/osx/blob/master/brew/nginx.md)
     - [Python3](https://github.com/prawee/osx/blob/master/brew/python3.md)
+    - [Composer](https://github.com/prawee/osx/blob/master/brew/composer.md)
     
