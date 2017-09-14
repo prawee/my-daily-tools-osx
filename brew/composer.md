@@ -18,4 +18,10 @@ $ brew install composer
 $ composer
 # Composer version 1.5.1 2017-08-09 16:07:22
 ```
- 
+
+### Github
+```bash
+$ git config —global user.email “prawee@hotmail.com”
+$ git config —global user.name “Prawee Wingsa”
+$ composer config --global --auth github-oauth.github.com <token>
+```
