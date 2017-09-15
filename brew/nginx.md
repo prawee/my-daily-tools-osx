@@ -15,6 +15,11 @@ $ brew install nginx
 $ brew services start nginx
 ```
 
+### Default path
+```bash
+/usr/local/Cellar/nginx/1.12.1/html
+```
+
 ### Update default configurations
 ```bash
 $ nano /usr/local/etc/nginx/nginx.conf
