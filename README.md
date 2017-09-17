@@ -14,3 +14,4 @@ This repository is my lock for working every day.
 
 - [GCP](#gcp)
     - [Install-SDK](https://github.com/prawee/osx/blob/master/gcp/install-sdk.md)
+    - [Authentication](https://github.com/prawee/osx/blob/master/gcp/auth.md)
