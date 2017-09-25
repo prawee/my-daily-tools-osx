@@ -1,0 +1,23 @@
+## Install Homebrew
+
+### XCode
+```bash
+$ xcode-select --install
+# press OK
+```
+
+### Homebrew
+```bash
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# press enter | return
+```
+
+### Check conflicts and update package
+```bash
+$ brew dotor
+$ brew update
+$ brew upgrade
+```
+
+### Reference
+https://xtracode.me/installing-nginx-php-fpm-mysql-on-mac-os/
