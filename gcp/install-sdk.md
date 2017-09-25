@@ -1,0 +1,42 @@
+## Google cloud platform
+
+### Check first
+```bash
+$ gcloud
+# -bash: gcloud: command not found
+```
+
+### Initial software required
+```bash
+$ python -V
+# Python 2.7.10
+```
+
+### Download and installing SDK
+```bash
+$ cd
+$ curl https://sdk.cloud.google.com | bash
+
+# Installation directory (this will create a google-cloud-sdk subdirectory) (/Users/prawee): [enter]
+# Do you want to help improve the Google Cloud SDK (Y/n)? Y [enter]
+# Modify profile to update your $PATH and enable shell command
+completion? 
+# Do you want to continue (Y/n)? Y [enter]
+# Enter a path to an rc file to update, or leave blank to use [/Users/prawee/.zshrc]: [enter]
+```
+
+### Restart shell
+```bash
+$ exec -l $SHELL
+```
+
+### Let's go
+```bash
+$ gcloud
+# ERROR: (gcloud) too few arguments
+# ......
+```
+
+
+### Reference
+https://rapidtrade.screenstepslive.com/s/standards/m/48961/l/444927-installing-the-google-cloud-sdk-mac-osx
