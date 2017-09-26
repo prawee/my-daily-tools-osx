@@ -1,18 +1,23 @@
 ## Knex.js
 
-## Installing to global
+### Installing to global
 ```bash
 $ npm install -g knex
 ```
 
-## How to make migrations
+### Create knexfile
+```bash
+$ knex init
+```
+
+### How to make migrations
 ```bash
 # go to root directory of your project
 $ knex migrate:make <filename>
 # ./migrations/filename.js
 ```
 
-## How to run migrations
+### How to run migrations
 ```bash
 # go to root directory of your project
 $ knex migrate:lastest .
