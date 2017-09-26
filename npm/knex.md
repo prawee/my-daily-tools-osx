@@ -20,7 +20,7 @@ $ knex migrate:make <filename>
 ### How to run migrations
 ```bash
 # go to root directory of your project
-$ knex migrate:lastest .
+$ knex migrate:latest .
 # Batch 1 run: 1 migrations
 ```
 
