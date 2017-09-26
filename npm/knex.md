@@ -2,7 +2,7 @@
 
 ## Installing to global
 ```bash
-$ npm install -g knex-cli
+$ npm install -g knex
 ```
 
 ## How to make migrations
