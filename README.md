@@ -38,4 +38,5 @@ This repository is my lock for working every day.
 
 - [Python](#python)
     - [PIP](#pip)
-        - [Virtualenv](https://github.com/prawee/osx/blob/master/pip/virtualenv.md)
+        - [Virtualenv](https://github.com/prawee/osx/blob/master/python/pip/virtualenv.md)
+        - [Autoenv](https://github.com/prawee/osx/blob/master/python/pip/autoenv.md)
