@@ -35,3 +35,6 @@ This repository is my lock for working every day.
 
 - [Wordpress](#wordpress)
     - [Fixed update](https://github.com/prawee/osx/blob/master/react-native/fixed-unable-install-or-update-plugins-and-theme.md)
+
+- [PIP](#pip)
+    - [Virtualenv](https://github.com/prawee/osx/blob/master/pip/virtualenv.md)
