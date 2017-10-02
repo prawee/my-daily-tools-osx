@@ -25,4 +25,5 @@ $ source ~/.bash_profile | source ~/.zprofile
 ### Check
 ```bash
 $ lumen -V
+# Lumen Installer 1.0.2
 ```
