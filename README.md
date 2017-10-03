@@ -27,6 +27,8 @@ This repository is my lock for working every day.
     - [Lumen](#lumen)
         - [Installation](https://github.com/prawee/osx/blob/master/laravel/lumen/install.md)
         - [Create Project](https://github.com/prawee/osx/blob/master/laravel/lumen/create-project.md)
+        - [Generate Controller](https://github.com/prawee/osx/blob/master/laravel/lumen/create-controller.md)
+        - [Generate Model](https://github.com/prawee/osx/blob/master/laravel/lumen/create-model.md)
 
 - [NPM](#npm)
     - [Knex](https://github.com/prawee/osx/blob/master/npm/knex.md)
