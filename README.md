@@ -2,6 +2,10 @@
 This repository is my lock for working every day.
 
 ## Table of Contents
+- [Angular](#angular)
+    - [Installation CLI](https://github.com/prawee/osx/blob/master/angular/1.installation-cli.md)
+    - [Create Project](https://github.com/prawee/osx/blob/master/angular/2.create-project.md)
+    - [Create Component](https://github.com/prawee/osx/blob/master/angular/3.create-component.md)
 - [Brew](#brew)
     - [Composer](https://github.com/prawee/osx/blob/master/brew/composer.md)
     - [Install](https://github.com/prawee/osx/blob/master/brew/install.md)
