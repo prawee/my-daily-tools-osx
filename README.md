@@ -47,6 +47,8 @@ This repository is my lock for working every day.
 - [NPM](#npm)
     - [Knex](https://github.com/prawee/osx/blob/master/npm/knex.md)
     - [Sails](https://github.com/prawee/osx/blob/master/npm/sails.md)
+- [Packagist](#packagist)(New)
+    - [Hook with Github](https://github.com/prawee/osx/blob/master/packagist/hook-github.md)
 - [React Native](#reactnative)
     - [Fixed gitignore](https://github.com/prawee/osx/blob/master/react-native/fixed-gitignore-not-working-with-gradle.md)
     - [Install](https://github.com/prawee/osx/blob/master/react-native/install.md)
