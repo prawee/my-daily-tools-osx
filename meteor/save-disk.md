@@ -5,6 +5,7 @@
 ```bash
 $ cd your-project-directory
 $ rm -rf .meteor/local/bundler-cache
+$ rm -rf .meteor/local/plugin-cache
 ```
 
 ## Reference
