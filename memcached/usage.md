@@ -17,3 +17,8 @@ $ stats slabs
 ```bash
 $ stats items
 ```
+
+## Clear
+```bash
+$ echo 'flush_all' | nc localhost 11211
+```
