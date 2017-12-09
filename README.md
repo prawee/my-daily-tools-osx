@@ -61,7 +61,7 @@ This repository is my lock for working every day.
 - [React Native](#reactnative)
     - [Fixed gitignore](https://github.com/prawee/osx/blob/master/react-native/fixed-gitignore-not-working-with-gradle.md)
     - [Install](https://github.com/prawee/osx/blob/master/react-native/1.install.md)
-    - [Create Project] (https://github.com/prawee/osx/blob/master/react-native/2.create-application.md)
+    - [Create Project](https://github.com/prawee/osx/blob/master/react-native/2.create-application.md)
 - [Silex](#silex)(Updated)
     - [Create Project](https://github.com/prawee/osx/blob/master/silex/1.create-project.md)
     - [Create Log](https://github.com/prawee/osx/blob/master/silex/2.create-log.md)
