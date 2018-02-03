@@ -67,6 +67,8 @@ This repository is my lock for working every day.
     - [Create Log](https://github.com/prawee/osx/blob/master/silex/2.create-log.md)
     - [Using Dump](https://github.com/prawee/osx/blob/master/silex/3.using-dump.md)
     - [Create Service](https://github.com/prawee/osx/blob/master/silex/4.create-services.md)
+- [Vue](#vue)
+    - [Install](https://github.com/prawee/osx/blob/master/vue/1.installation.md)
 - [Wordpress](#wordpress)
     - [Fixed update](https://github.com/prawee/osx/blob/master/react-native/fixed-unable-install-or-update-plugins-and-theme.md)
 - [Yii](#yii)(New)
