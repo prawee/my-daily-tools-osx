@@ -22,3 +22,9 @@ $ git commit -m "your-message"
 ```bash
 $ git push -u origin master
 ```
+
+## If not ok
+```bash
+$ git config --global user.email "your email that register on github"
+$ git config --global user.name "your name"
+```
