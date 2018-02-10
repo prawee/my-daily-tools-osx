@@ -61,6 +61,8 @@ This repository is my lock for working every day.
     - [PIP](#pip)
         - [Virtualenv](https://github.com/prawee/osx/blob/master/python/pip/virtualenv.md)
         - [Autoenv](https://github.com/prawee/osx/blob/master/python/pip/autoenv.md)
+- [React](#react)
+    - [Create Project](https://github.com/prawee/osx/blob/master/react/1.create-project.md)
 - [React Native](#reactnative)
     - [Fixed gitignore](https://github.com/prawee/osx/blob/master/react-native/fixed-gitignore-not-working-with-gradle.md)
     - [Install](https://github.com/prawee/osx/blob/master/react-native/1.install.md)
