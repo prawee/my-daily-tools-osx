@@ -1,6 +1,9 @@
 # Project
 This repository is my lock for working every day.
 
+## Resource
+https://100dayscss.com
+
 ## Table of Contents
 - [Angular](#angular)(Updated)
     - [Installation CLI](https://github.com/prawee/osx/blob/master/angular/1.installation-cli.md)
