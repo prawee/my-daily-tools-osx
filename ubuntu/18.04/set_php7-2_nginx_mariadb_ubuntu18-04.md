@@ -71,41 +71,53 @@
     ~~~
 
 4. ติดตั้ง extensions เบื้องต้นสำหรับ php7.2
-    /*** ใช้คำสั่ง ***/    
+    ~~~bat
     apt install php7.2-fpm
     apt install php7.2-mbstring
     apt install php7.2-xml
-
-    /*** ในกรณีที่ ubuntu ยังไม่ได้ติดตั้ง zip และ unzip #ต้องติดตั้งเพราะจะทำให้ไม่สารมารถ composer install ได้ ***/
-    apt install zip unzip
-
-5. ติดตั้ง project
-    /*** เข้าไปยัง part ที่ใช้สำหรับแสดงผลเว็บ ***/
-    cd /var/www
+    ~~~
     
-    /*** ใช้คำสั่ง ***/
+   ในกรณีที่ ubuntu ยังไม่ได้ติดตั้ง zip และ unzip #ต้องติดตั้งเพราะจะทำให้ไม่สารมารถ composer install ได้
+    ~~~bat
+    apt install zip unzip
+    ~~~
+    
+5. ติดตั้ง project
+    เข้าไปยัง part ที่ใช้สำหรับแสดงผลเว็บ
+    ~~~bat
+    cd /var/www
+    ~~~
+    ใช้คำสั่ง
+    ~~~bat
     git clone <url>
     
-    cd projectname
+    cd <projectname>
     
     sudo php init
-
-    /*** ตั้งค่าเชื่อมต่อกับ database ***/
+    ~~~
+    
+    ตั้งค่าเชื่อมต่อกับ database
+    ~~~bat
     nano /var/www/pov-website/common/config/main-local.php
-    /***file main-local.php***/
-   	 'class' => 'yii\db\Connection',
+    ~~~
+    
+    file main-local.php
+   ~~~bat
+   	'class' => 'yii\db\Connection',
        		 'dsn' => 'mysql:host=127.0.0.1;dbname=pov',
        		 'username' => 'root',
        		 'password' => 'password',
        		 'charset' => 'utf8',
-    /***end file***/
-
+    ~~~
 6. ตั้งค่า part ตำแหน่งที่แสดงผลเว็บ
+    ~~~bat
     cd /etc/nginx/sites-enable/
-    nano default
     
-    /****file default****/
-   	 
+    nano default
+    ~~~
+    
+    file default
+   ~~~bat
    	 server{
    		 listen 80 default_server;
    	     	listen [::]:80 default_server;
@@ -133,35 +145,41 @@
    			 }
 
    	 }
+    ~~~    
     
-    /*****end file*****/
-
+    restart nginx
+    ~~~bat
     nginx -s reload
     nginx -s reopen
-
-    /*** ทดสอบการทำงานร่วมกับของ php กับ nginx ***/
+    ~~~
     
+    ทดสอบการทำงานร่วมกับของ php กับ nginx
+    ~~~bat
     cd /var/www/pov-website/
-
+    
     nano info.php
-
-    /*****file info.php*****/
+    ~~~
+    
+    file info.php
+    ~~~bat
    	 <?php
-   		 phpinfo();
-   		 
-    /*****end file*****/
+   		 phpinfo();	 
+    ~~~
 
 
-  		 /***run info.php***/
+    run info.php
     เปิด browser -> localhost/info.php  หรือ ip ของ server/info.php #ถ้าเปิด info.php ได้แสดงว่าสามารถใช้งาน php ร่วมกับ nginx ได้แล้ว
 
 7. ติดตั้ง extensions เพิ่มเติมสำหรับใช้งานกับ yii2
     เช็ค requirements ของ yii2 #ติดตั้งตาม extension ที่ยังไม่ได้ติดตั้ง
     เปิด browser -> localhost/requirements.php
-    เช่น    apt install php7.2-intl
+    เช่น  
+    ~~~bat
+    	 apt install php7.2-intl
    	 apt install php7.2-sqlite
    	 apt install php7.2-mysql
    	 apt install php7.2-gd
+    ~~~
     เป็นต้น
 
 8. ติดตั้ง composer ใน project
