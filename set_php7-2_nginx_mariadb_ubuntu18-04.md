@@ -1,6 +1,6 @@
 /***** set server for yii2 in ubuntu 18.04 (nginx, php7.2, mariadb) ******/
 
-1. ËÅÑ§¨Ò¡·ÕèµÔ´µÑé§ ubuntu àÊÃç¨
+1. หลังจากติดตั้ง ubuntu 18.04
     /*** ãªé¤ÓÊÑè§ ***/
     ~~~bash
     apt install net-tools
