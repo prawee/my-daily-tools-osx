@@ -1,17 +1,19 @@
 ﻿/***** set server for yii2 in ubuntu 18.04 (nginx, php7.2, mariadb) ******/
 
 1. หลังจากที่ติดตั้ง ubuntu เสร็จ
-    /*** ใช้คำสั่ง ***/
+    ~~~bat
     apt install net-tools
     apt update
     apt upgrate
-
+    ~~~
 2. ติดตั้ง nginx
-    /*** ใช้คำสั่ง ***/
+    ~~~bat
     apt install nginx
-    
-    /*** ทดสอบ nginx ***/
+    ~~~
+    ทดสอบ nginx
+    ~~~bat
     เปิด browser -> localhost หรือ 127.0.0.1
+    ~~~
 
     /*** part default สำหรับแสดงผล ***/
     /var/www/html
