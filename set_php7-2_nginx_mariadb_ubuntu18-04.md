@@ -1,29 +1,31 @@
 /***** set server for yii2 in ubuntu 18.04 (nginx, php7.2, mariadb) ******/
 
-1. หลังจากที่ติดตั้ง ubuntu เสร็จ
-    /*** ใช้คำสั่ง ***/
+1. รร…ร‘ยงยจร’ยกยทร•รจยตร”ยดยตร‘รฉยง ubuntu ร รรรงยจ
+    /*** รฃยชรฉยคร“รร‘รจยง ***/
+    ~~~bash
     apt install net-tools
     apt update
     apt upgrate
+    ~~~
 
-2. ติดตั้ง nginx
-    /*** ใช้คำสั่ง ***/
+2. ยตร”ยดยตร‘รฉยง nginx
+    /*** รฃยชรฉยคร“รร‘รจยง ***/
     apt install nginx
     
-    /*** ทดสอบ nginx ***/
-    เปิด browser -> localhost หรือ 127.0.0.1
+    /*** ยทยดรรยบ nginx ***/
+    ร ยปร”ยด browser -> localhost รรร—ร 127.0.0.1
 
-    /*** part default สำหรับแสดงผล ***/
+    /*** part default รร“รรร‘ยบรกรยดยงยผร… ***/
     /var/www/html
 
     
 
-3. ติดตั้ง mariadb
-    /*** ใช้คำสั่ง ***/
+3. ยตร”ยดยตร‘รฉยง mariadb
+    /*** รฃยชรฉยคร“รร‘รจยง ***/
     apt install mariadb-server
 
 
-    /*** ตั้งค่า password ***/
+    /*** ยตร‘รฉยงยครจร’ password ***/
     mysql_secure_installation
 
     Enter current password for root(enter for none): Enter    
@@ -47,41 +49,41 @@
     mysql -u root -p
     password: password
 
-    /*** สร้าง database ***/
+    /*** รรรฉร’ยง database ***/
     create database dbname;
 
-    /*** แสดงรายการ database และ table ***/
+    /*** รกรยดยงรร’รยกร’ร database รกร…ร table ***/
     show databases;
     show tables;
 
-    /*** ถ้าต้องการเปลี่ยน password mariadb ***/    
+    /*** ยถรฉร’ยตรฉรยงยกร’รร ยปร…ร•รจรยน password mariadb ***/    
     use mysql;
-    UPDATE user SET plugin = ’’ WHERE user=’root’;
+    UPDATE user SET plugin = โ€โ€ WHERE user=โ€rootโ€;
     FLUSH PRIVILEGES;
     exit;
     service mysqld restart
 
-4. ติดตั้ง extensions เบื้องต้นสำหรับ php7.2
-    /*** ใช้คำสั่ง ***/    
+4. ยตร”ยดยตร‘รฉยง extensions ร ยบร—รฉรยงยตรฉยนรร“รรร‘ยบ php7.2
+    /*** รฃยชรฉยคร“รร‘รจยง ***/    
     apt install php7.2-fpm
     apt install php7.2-mbstring
     apt install php7.2-xml
 
-    /*** ในกรณีที่ ubuntu ยังไม่ได้ติดตั้ง zip และ unzip #ต้องติดตั้งเพราะจะทำให้ไม่สารมารถ composer install ได้ ***/
+    /*** รฃยนยกรยณร•ยทร•รจ ubuntu รร‘ยงรครรจรคยดรฉยตร”ยดยตร‘รฉยง zip รกร…ร unzip #ยตรฉรยงยตร”ยดยตร‘รฉยงร ยพรร’รยจรยทร“รฃรรฉรครรจรร’รรร’รยถ composer install รคยดรฉ ***/
     apt install zip unzip
 
-5. ติดตั้ง project
-    /*** เข้าไปยัง part ที่ใช้สำหรับแสดงผลเว็บ ***/
+5. ยตร”ยดยตร‘รฉยง project
+    /*** ร ยขรฉร’รคยปรร‘ยง part ยทร•รจรฃยชรฉรร“รรร‘ยบรกรยดยงยผร…ร รรงยบ ***/
     cd /var/www
     
-    /*** ใช้คำสั่ง ***/
+    /*** รฃยชรฉยคร“รร‘รจยง ***/
     git clone <url>
     
     cd projectname
     
     sudo php init
 
-    /*** ตั้งค่าเชื่อมต่อกับ database ***/
+    /*** ยตร‘รฉยงยครจร’ร ยชร—รจรรยตรจรยกร‘ยบ database ***/
     nano /var/www/pov-website/common/config/main-local.php
     /***file main-local.php***/
    	 'class' => 'yii\db\Connection',
@@ -91,7 +93,7 @@
        		 'charset' => 'utf8',
     /***end file***/
 
-6. ตั้งค่า part ตำแหน่งที่แสดงผลเว็บ
+6. ยตร‘รฉยงยครจร’ part ยตร“รกรยนรจยงยทร•รจรกรยดยงยผร…ร รรงยบ
     cd /etc/nginx/sites-enable/
     nano default
     
@@ -130,7 +132,7 @@
     nginx -s reload
     nginx -s reopen
 
-    /*** ทดสอบการทำงานร่วมกับของ php กับ nginx ***/
+    /*** ยทยดรรยบยกร’รยทร“ยงร’ยนรรจรรยกร‘ยบยขรยง php ยกร‘ยบ nginx ***/
     
     cd /var/www/pov-website/
 
@@ -144,22 +146,22 @@
 
 
   		 /***run info.php***/
-    เปิด browser -> localhost/info.php  หรือ ip ของ server/info.php #ถ้าเปิด info.php ได้แสดงว่าสามารถใช้งาน php ร่วมกับ nginx ได้แล้ว
+    ร ยปร”ยด browser -> localhost/info.php  รรร—ร ip ยขรยง server/info.php #ยถรฉร’ร ยปร”ยด info.php รคยดรฉรกรยดยงรรจร’รร’รร’รยถรฃยชรฉยงร’ยน php รรจรรยกร‘ยบ nginx รคยดรฉรกร…รฉร
 
-7. ติดตั้ง extensions เพิ่มเติมสำหรับใช้งานกับ yii2
-    เช็ค requirements ของ yii2 #ติดตั้งตาม extension ที่ยังไม่ได้ติดตั้ง
-    เปิด browser -> localhost/requirements.php
-    เช่น    apt install php7.2-intl
+7. ยตร”ยดยตร‘รฉยง extensions ร ยพร”รจรร ยตร”รรร“รรร‘ยบรฃยชรฉยงร’ยนยกร‘ยบ yii2
+    ร ยชรงยค requirements ยขรยง yii2 #ยตร”ยดยตร‘รฉยงยตร’ร extension ยทร•รจรร‘ยงรครรจรคยดรฉยตร”ยดยตร‘รฉยง
+    ร ยปร”ยด browser -> localhost/requirements.php
+    ร ยชรจยน    apt install php7.2-intl
    	 apt install php7.2-sqlite
    	 apt install php7.2-mysql
    	 apt install php7.2-gd
-    เป็นต้น
+    ร ยปรงยนยตรฉยน
 
-8. ติดตั้ง composer ใน project
-    /*** เข้าไปที่ part ของ project ***/
+8. ยตร”ยดยตร‘รฉยง composer รฃยน project
+    /*** ร ยขรฉร’รคยปยทร•รจ part ยขรยง project ***/
     cd /var/www/pov-web-site
     
-    /*** สร้างโฟล์เดอร์ vendor และแก้ไขการอนุญาตให้สามารถ เขียน อ่าน ลบ ดู โฟล์เดเอร์ vendor ไฟล์ composer.json และ composer.lock ***/
+    /*** รรรฉร’ยงรขยฟร…รฌร ยดรรรฌ vendor รกร…รรกยกรฉรคยขยกร’รรยนรยญร’ยตรฃรรฉรร’รร’รยถ ร ยขร•รยน รรจร’ยน ร…ยบ ยดร รขยฟร…รฌร ยดร รรรฌ vendor รคยฟร…รฌ composer.json รกร…ร composer.lock ***/
    	 sudo mkdir vendor
    	 
    	 sudo chmod -R 777 vendor
@@ -170,37 +172,37 @@
     composer install
 
 9. migrate database
-    /*** เข้าไปที่ part ของ project *///
+    /*** ร ยขรฉร’รคยปยทร•รจ part ยขรยง project *///
     cd /var/www/pov-web-site
 
     /*** migrate database ***/
     ./yii migrate
 
-    /*** ทดสอบ run project ***/
-    เปิด browser -> localhost/frontend/web
+    /*** ยทยดรรยบ run project ***/
+    ร ยปร”ยด browser -> localhost/frontend/web
 
 
 
-/********* กรณีที่ต้องการอัพโหลไฟล์ได้มากกว่า 2M *********/
-     /*** แก้ไขไฟล์ php.ini ของโฟลเดอร์ fpm และ cli โดยใช้คำสั่ง ***/     
+/********* ยกรยณร•ยทร•รจยตรฉรยงยกร’รรร‘ยพรขรร…รคยฟร…รฌรคยดรฉรร’ยกยกรรจร’ 2M *********/
+     /*** รกยกรฉรคยขรคยฟร…รฌ php.ini ยขรยงรขยฟร…ร ยดรรรฌ fpm รกร…ร cli รขยดรรฃยชรฉยคร“รร‘รจยง ***/     
      nano /etc/php7.2/fpm/php.ini
-     /*** แก้ไขให้เป็นดังนี้ ***/
+     /*** รกยกรฉรคยขรฃรรฉร ยปรงยนยดร‘ยงยนร•รฉ ***/
      upload_max_filesize = 20M
      post_max_size = 20M  
      
      nano /etc/php7.2/cli/php.ini
-     /*** แก้ไขให้เป็นดังนี้ ***/
+     /*** รกยกรฉรคยขรฃรรฉร ยปรงยนยดร‘ยงยนร•รฉ ***/
      upload_max_filesize = 20M
      post_max_size = 20M  
      
-     /*** แก้ไขไฟล์ nginx.conf โดยใช้คำสั่ง ***/
+     /*** รกยกรฉรคยขรคยฟร…รฌ nginx.conf รขยดรรฃยชรฉยคร“รร‘รจยง ***/
      nano /etc/nginx/nginx.conf
-     /*** เพิ่มคำสั่งเข้าไปในส่วนของ http {} ดังนี้ ***/
+     /*** ร ยพร”รจรยคร“รร‘รจยงร ยขรฉร’รคยปรฃยนรรจรยนยขรยง http {} ยดร‘ยงยนร•รฉ ***/
      Http {
 	client max_body_size 20m;
      }
 
-     /*** Restart php-fpm และ nginx ด้วยคำสั่ง ***/
+     /*** Restart php-fpm รกร…ร nginx ยดรฉรรยคร“รร‘รจยง ***/
      Service php7.2-fpm restart && service nginx restart
 
 
