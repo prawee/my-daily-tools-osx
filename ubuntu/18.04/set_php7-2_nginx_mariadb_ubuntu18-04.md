@@ -175,59 +175,74 @@
     เปิด browser -> localhost/requirements.php
     เช่น  
     ~~~bat
-    	 apt install php7.2-intl
-   	 apt install php7.2-sqlite
-   	 apt install php7.2-mysql
-   	 apt install php7.2-gd
+    apt install php7.2-intl
+    apt install php7.2-sqlite
+    apt install php7.2-mysql
+    apt install php7.2-gd
     ~~~
     เป็นต้น
 
 8. ติดตั้ง composer ใน project
-    /*** เข้าไปที่ part ของ project ***/
+    เข้าไปที่ part ของ project
+    ~~~bat
     cd /var/www/pov-web-site
+    ~~~
     
-    /*** สร้างโฟล์เดอร์ vendor และแก้ไขการอนุญาตให้สามารถ เขียน อ่าน ลบ ดู โฟล์เดเอร์ vendor ไฟล์ composer.json และ composer.lock ***/
-   	 sudo mkdir vendor
+    สร้างโฟล์เดอร์ vendor และแก้ไขการอนุญาตให้สามารถ เขียน อ่าน ลบ ดู โฟล์เดเอร์ vendor ไฟล์ composer.json และ composer.lock
+   ~~~bat
+	 sudo mkdir vendor
    	 
    	 sudo chmod -R 777 vendor
    	 sudo chmod -R 777 composer.json
    	 sudo chmod -R 777 composer.lock    
-   		 
-    
+   ~~~	 
+   ~~~bat
     composer install
-
+   ~~~
 9. migrate database
-    /*** เข้าไปที่ part ของ project *///
+    เข้าไปที่ part ของ project
+    ~~~bat
     cd /var/www/pov-web-site
-
-    /*** migrate database ***/
+    ~~~
+    
+    migrate database
+    ~~~bat
     ./yii migrate
+    ~~~
+    
+    ทดสอบ run project โดยการเปิด browser -> localhost/frontend/web
 
-    /*** ทดสอบ run project ***/
-    เปิด browser -> localhost/frontend/web
-
-
-
-/********* กรณีที่ต้องการอัพโหลไฟล์ได้มากกว่า 2M *********/
-     /*** แก้ไขไฟล์ php.ini ของโฟลเดอร์ fpm และ cli โดยใช้คำสั่ง ***/     
+(เพิ่มเติม)
+กรณีที่ต้องการอัพโหลไฟล์ได้มากกว่า 2M 
+     แก้ไขไฟล์ php.ini ของโฟลเดอร์ fpm และ cli โดยใช้คำสั่ง 
+   ~~~bat
      nano /etc/php7.2/fpm/php.ini
-     /*** แก้ไขให้เป็นดังนี้ ***/
+   ~~~
+   แก้ไขให้เป็นดังนี้
+   ~~~bat
      upload_max_filesize = 20M
      post_max_size = 20M  
-     
+   ~~~  
+   ~~~bat   
      nano /etc/php7.2/cli/php.ini
-     /*** แก้ไขให้เป็นดังนี้ ***/
+   ~~~
+   แก้ไขให้เป็นดังนี้
+   ~~~bat
      upload_max_filesize = 20M
      post_max_size = 20M  
-     
-     /*** แก้ไขไฟล์ nginx.conf โดยใช้คำสั่ง ***/
+   ~~~
+   แก้ไขไฟล์ nginx.conf โดยใช้คำสั่ง
+   ~~~bat
      nano /etc/nginx/nginx.conf
-     /*** เพิ่มคำสั่งเข้าไปในส่วนของ http {} ดังนี้ ***/
-     Http {
+   ~~~
+   เพิ่มคำสั่งเข้าไปในส่วนของ http {} ดังนี้
+   ~~~bat
+   Http {
 	client max_body_size 20m;
      }
-
-     /*** Restart php-fpm และ nginx ด้วยคำสั่ง ***/
+   ~~~
+   Restart php-fpm และ nginx ด้วยคำสั่ง
+   ~~~bat
      Service php7.2-fpm restart && service nginx restart
-
+   ~~~
 
