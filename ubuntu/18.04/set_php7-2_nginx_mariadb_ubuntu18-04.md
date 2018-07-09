@@ -10,14 +10,12 @@
     ~~~bat
     apt install nginx
     ~~~
-    ทดสอบ nginx
+    ทดสอบ nginx โดยการเปิด browser -> localhost หรือ 127.0.0.1
+
+    part default สำหรับแสดงผล
     ~~~bat
-    เปิด browser -> localhost หรือ 127.0.0.1
-    ~~~
-
-    /*** part default สำหรับแสดงผล ***/
     /var/www/html
-
+    ~~~
     
 
 3. ติดตั้ง mariadb
