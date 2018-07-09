@@ -19,11 +19,12 @@
     
 
 3. ติดตั้ง mariadb
-    /*** ใช้คำสั่ง ***/
+    ~~~bat
     apt install mariadb-server
+    ~~~
 
-
-    /*** ตั้งค่า password ***/
+    ตั้งค่า password
+    ~~~bat
     mysql_secure_installation
 
     Enter current password for root(enter for none): Enter    
@@ -41,25 +42,33 @@
     Remove test database and access now? [Y/n]: Y
  
     Reload privilege tables now? [Y/n]: Y
+    ~~~
 
-
-    /***login to database***/
+    login to database
+    ~~~bat
     mysql -u root -p
     password: password
-
-    /*** สร้าง database ***/
+    ~~~
+    
+    สร้าง database
+    ~~~bat
     create database dbname;
-
-    /*** แสดงรายการ database และ table ***/
+    ~~~
+    
+    แสดงรายการ database และ table
+    ~~~bat
     show databases;
     show tables;
-
-    /*** ถ้าต้องการเปลี่ยน password mariadb ***/    
+    ~~~
+    
+    ถ้าต้องการเปลี่ยน password mariadb
+    ~~~bat
     use mysql;
     UPDATE user SET plugin = ’’ WHERE user=’root’;
     FLUSH PRIVILEGES;
     exit;
     service mysqld restart
+    ~~~
 
 4. ติดตั้ง extensions เบื้องต้นสำหรับ php7.2
     /*** ใช้คำสั่ง ***/    
