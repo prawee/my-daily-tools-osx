@@ -179,6 +179,7 @@
     apt install php7.2-sqlite
     apt install php7.2-mysql
     apt install php7.2-gd
+    apt install php7.2-pgsql
     ~~~
     เป็นต้น
 
