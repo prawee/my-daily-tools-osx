@@ -180,6 +180,9 @@
     apt install php7.2-mysql
     apt install php7.2-gd
     apt install php7.2-pgsql
+    apt install php7.2-apc
+    apt install php7.2-imagick
+    apt install php7.2-memcached
     ~~~
     เป็นต้น
 
