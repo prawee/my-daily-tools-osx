@@ -11,5 +11,6 @@ $ npm cache clean --force
 $ sudo du -sh /Library/Caches
 Password: 
 #187M /Library/Caches
-$ rm -rf /Library/Caches/*
+$ sudo rm -rf /Library/Caches/*
+Password:
 ```
