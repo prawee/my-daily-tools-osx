@@ -21,4 +21,7 @@ $ sudo rm -rf ~/Library/Application Suport/(App Name)
 # bin
 $ cd /usr/local/bin
 $ rm -rf python*
+
+# Library
+$ sudo rm -rf /Library/Frameworks/Python.framework
 ```
