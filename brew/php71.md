@@ -54,3 +54,8 @@ $ echo $PATH
 $ which php
 # /usr/local/opt/php@7.1/bin/php <= homebrew version
 ```
+## Remove 
+```bash
+$ brew uninstall php@7.1
+# Uninstalling /usr/local/Cellar/php@7.1/7.1.25... (513 files, 63.2MB)
+```
