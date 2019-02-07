@@ -1,5 +1,5 @@
 # Project
-This repository is my lock for working every day.
+This repository is my log for working every day.
 
 ## Resource
 https://100dayscss.com
