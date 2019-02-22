@@ -15,3 +15,15 @@ $ sudo forever list
 $ sudo forever start <script>
 # $ sudo forever start -c "yarn start" .
 ```
+
+## Stop
+```bash
+$ sudo forever list ***getting uid of script
+$ sudo forever stop <uid>
+```
+
+## Restart
+```bash
+$ sudo forever list ***getting uid of script
+$ sudo forever restart <uid>
+```
