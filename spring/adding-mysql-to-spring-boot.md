@@ -1,6 +1,6 @@
 # How to adding MySQL to Spring boot
 
-## via POM
+## update POM
 1. go to https://mvnrepository.com
 2. find by "mysql connector"
 3. click on MySQL Connector/J
@@ -28,4 +28,13 @@
     ...
 </dependencies>
 ...
+```
+
+## Configure
+### src/main/resources/application.properties
+```bash
+spring.datasource.username={username-of-mysql}
+spring.datasource.password={password-of-mysql}
+spring.datasource.url=jdbc:mysql://localhost:3306/{db-name}
+spring.jpa.hibernate.ddl-auto=update
 ```
