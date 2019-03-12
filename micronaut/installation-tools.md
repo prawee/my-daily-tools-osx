@@ -10,3 +10,15 @@ $ curl -s "https://get.sdkman.io" | bash
 $ sdk
 # .....
 ```
+
+## Maven
+```bash
+$ sdk install maven
+```
+
+## Micronaut
+```bash
+$ mn
+# zsh: command not found: mn
+$ sdk install micronaut
+```
