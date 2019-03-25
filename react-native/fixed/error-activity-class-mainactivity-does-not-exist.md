@@ -10,3 +10,6 @@ $ adb uninstall com.react_native
 #Success
 $ react-native run-android
 ```
+
+## PS
+com.xyz  is mean current package
