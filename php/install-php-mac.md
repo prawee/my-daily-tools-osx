@@ -18,6 +18,6 @@ $ curl -s https://php-osx.liip.ch/install.sh | bash -s force 7.3
 ```
 
 ## Reference
-https://php-osx.liip.ch 
-https://medium.com/@accounts.guillermo/installing-php-extensions-pecl-solr-on-mac-osx-mojave-after-homebrews-april-2018-update-31cc15fda906 
+https://php-osx.liip.ch  
+https://medium.com/@accounts.guillermo/installing-php-extensions-pecl-solr-on-mac-osx-mojave-after-homebrews-april-2018-update-31cc15fda906  
 http://www.devinbaldwin.com/2018/09/27/how-to-install-xdebug-on-a-new-mac-including-mojave/ 
