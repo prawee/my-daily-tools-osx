@@ -1,26 +1,29 @@
 # How to installation MariaDB
 
 ## Check
+
 ```bash
-$ mysql -v
+mysql -v
 # The program 'mysql' can be found in the following packages
 ```
 
 ## Installation
+
 ```bash
-$ apt-get install software-properties-common
-$ apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
-$ add-apt-repository 'deb [arch=amd64,i386,ppc64el] http://mirrors.bestthaihost.com/mariadb/repo/10.1/ubuntu xenial main'
-$ apt-get update
-$ apt-get install mariadb-server
+apt-get install software-properties-common
+apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xF1656F24C74CD1D8
+add-apt-repository 'deb [arch=amd64,i386,ppc64el] http://mirrors.bestthaihost.com/mariadb/repo/10.1/ubuntu xenial main'
+apt-get update
+apt-get install mariadb-server
 # Y
 # [root password]
 # [retype root password]
 ```
 
 ## Configure Secure
+
 ```bash
-$ mysql_secure_installation
+mysql_secure_installation
 # Enter current password for root (enter for none): [current password]
 # Change the root password? [Y/n] [n]
 # Remove anonymous users? [Y/n] [Y]
@@ -31,13 +34,15 @@ $ mysql_secure_installation
 ```
 
 ## Usage
+
 ```bash
-$ mysql -uroot -p
+mysql -uroot -p
 # [your password]
 # MariaDB [(none)]>
 ```
 
 ## Create db
+
 ```bash
 MariaDB [(none)]> show databases;
 +--------------------+
