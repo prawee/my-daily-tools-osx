@@ -1,24 +1,29 @@
-## Python 3.x
+# Python 3.x
 
-### Check version
+## Check version
+
 ```bash
-$ python --version
+python --version
 # Python 2.7.10
 ```
 
-### Install with brew
+## Install with brew
+
 ```bash
-$ brew update
-$ brew upgrade
-$ brew install python3
+brew update
+brew upgrade
+brew install python3
 ```
-### Recheck version again
+
+## Recheck version again
+
 ```bash
-$ python --version
+python --version
 # Python 2.7.10
-$ python3 --version
+python3 --version
 # Python 3.6.2
 ```
 
-### Reference
-https://wsvincent.com/install-python3-mac/
+## Reference
+
+<https://wsvincent.com/install-python3-mac/>

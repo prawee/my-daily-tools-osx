@@ -1,9 +1,10 @@
 # How to generate SSH key
 
 ## Generate key
+
 ```bash
-$ cd ~/.ssh
-$ ssh-keygen -t rsa -b 4096 -C "konkeanweb@gmail.com"
+cd ~/.ssh
+ssh-keygen -t rsa -b 4096 -C "konkeanweb@gmail.com"
 Generating public/private rsa key pair.
 Enter file in which to save the key (/Users/pod/.ssh/id_rsa): {name}
 Enter passphrase (empty for no passphrase): {pass}
@@ -25,10 +26,12 @@ The key's randomart image is:
 |                 |
 +----[SHA256]-----+
 ```
+
 ## View all SSH
+
 ```bash
-$ cd ~/.ssh
-$ ls -la
+cd ~/.ssh
+ls -la
 -rw-r--r--   1 pod  staff   353 Jan 27 20:58 known_hosts
 #.......
 #.......

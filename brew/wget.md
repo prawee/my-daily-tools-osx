@@ -1,19 +1,22 @@
-## Wget for Python
+# Wget for Python
 
-### Check first
+## Check first
+
 ```bash
-$ wget
+wget
 # zsh: command not found: wget
 ```
 
-### Install with brew
+## Install with brew
+
 ```bash
-$ brew search wget
-$ brew install wget
+brew search wget
+brew install wget
 ```
 
-### Usage
+## Usage
+
 ```bash
-$ wget
+wget
 # wget: missing URL
 ```

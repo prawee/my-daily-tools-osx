@@ -1,5 +1,6 @@
-### Adding Homestead
+# Adding Homestead
+
 ```bash
-$ cd <your-project>
-$ composer require laravel/homestead
+cd <your-project>
+composer require laravel/homestead
 ```

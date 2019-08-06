@@ -1,6 +1,7 @@
 # How to create spring boot with Maven
 
 ## On VSCode
+
 1. Shift + Command + P
 2. Typing "Spring Initializr" then click "Spring Initializr: Generate a Maven project"
 3. Choose "Java"
@@ -11,4 +12,5 @@
 8. Choose folder to generate "/var/www"
 
 ## Reference
-https://code.visualstudio.com/docs/java/java-spring-boot
+
+<https://code.visualstudio.com/docs/java/java-spring-boot>

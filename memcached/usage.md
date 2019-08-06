@@ -1,29 +1,35 @@
-## How to usage
+# How to usage
+
 ```bash
-$ telnet localhost 11211
+telnet localhost 11211
 ```
 
 ## Statistics
+
 ```bash
-$ stats
+stats
 ```
 
 ## Slabs
+
 ```bash
-$ stats slabs
+stats slabs
 ```
 
 ## Items
+
 ```bash
-$ stats items
+stats items
 ```
 
 ## Clear
+
 ```bash
-$ flush_all
+flush_all
 ```
 
 ## Clear via without telnet
+
 ```bash
-$ echo 'flush_all' | nc localhost 11211
+echo 'flush_all' | nc localhost 11211
 ```

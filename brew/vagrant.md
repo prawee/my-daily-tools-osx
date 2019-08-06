@@ -1,14 +1,16 @@
-## Install Vagrant with brew
+# Install Vagrant with brew
 
-### Check brew first
+## Check brew first
+
 ```bash
-$ brew doctor
-$ brew update
-$ brew upgrade
+brew doctor
+brew update
+brew upgrade
 ```
 
-### Installation
+## Installation
+
 ```bash
-$ brew cask install vagrant
-$ brew cask install vagrant-manager
+brew cask install vagrant
+brew cask install vagrant-manager
 ```

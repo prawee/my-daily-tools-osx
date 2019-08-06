@@ -1,21 +1,25 @@
 # How to install Nginx
 
 ## Check package
+
 ```bash
-$ brew search nginx
+brew search nginx
 ```
 
 ## Install via brew
+
 ```bash
-$ brew install nginx
+brew install nginx
 ```
 
-## Start 
+## Start
+
 ```bash
-$ nginx  | brew services start nginx
+nginx  | brew services start nginx
 ```
 
 ## Note
+
 ```bash
 # Document root => /usr/local/var/www
 # Default port => /usr/local/etc/nginx/nginx.conf

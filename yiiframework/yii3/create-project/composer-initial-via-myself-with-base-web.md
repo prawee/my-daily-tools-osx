@@ -1,11 +1,12 @@
 # How to create project via git
 
 ## Create folder and initial git
+
 ```bash
-$ cd /var/www
-$ mkdir yii3-web
-$ cd yii3-web
-$ composer init
+cd /var/www
+mkdir yii3-web
+cd yii3-web
+composer init
 #This command will guide you through creating your composer.json config.
 Package name (<vendor>/<name>) [pod/yii3-web]: prawee/yii3-web
 Description []: Skeleton template project with Yii3
@@ -32,9 +33,10 @@ Do you confirm generation [yes]? yes
 ```
 
 ## Installing packages
+
 ```bash
-$ cd /var/www/yii3-web
-$ composer require yiisoft/yii-base-web
+cd /var/www/yii3-web
+composer require yiisoft/yii-base-web
 # Using version ^3.0@dev for yiisoft/yii-base-web
 # ./composer.json has been updated
 # Loading composer repositories with package information
@@ -44,17 +46,17 @@ $ composer require yiisoft/yii-base-web
 #   - Installing symfony/polyfill-ctype (dev-master 82ebae0): Cloning 82ebae0220 from cache
 #   - Installing vlucas/phpdotenv (2.6.x-dev 2a7dcf7): Cloning 2a7dcf7e3e from cache
 #   - Installing doctrine/lexer (dev-master 4ab6ea7): Cloning 4ab6ea7c83 from cache
-#   - Installing egulias/email-validator (2.1.7): Downloading (100%)         
+#   - Installing egulias/email-validator (2.1.7): Downloading (100%)
 #   - Installing symfony/polyfill-mbstring (dev-master fe5e94c): Cloning fe5e94c604 from cache
 #   - Installing symfony/polyfill-iconv (dev-master f037ea2): Cloning f037ea22ac from cache
 #   - Installing symfony/polyfill-php72 (dev-master ab50dcf): Cloning ab50dcf166 from cache
-#   - Installing symfony/polyfill-intl-idn (v1.10.0): Downloading (100%)         
+#   - Installing symfony/polyfill-intl-idn (v1.10.0): Downloading (100%)
 #   - Installing swiftmailer/swiftmailer (dev-master c2100aa): Cloning c2100aa5bf from cache
 #   - Installing psr/simple-cache (dev-master 408d5ea): Cloning 408d5eafb8 from cache
 #   - Installing yiisoft/cache (dev-master f9aa30c): Cloning f9aa30ca51 from cache
-#   - Installing psr/container (1.0.0): Downloading (100%)         
+#   - Installing psr/container (1.0.0): Downloading (100%)
 #   - Installing yiisoft/di (dev-master fb3de76): Cloning fb3de76755 from cache
-#   - Installing psr/log (1.0.2): Downloading (100%)         
+#   - Installing psr/log (1.0.2): Downloading (100%)
 #   - Installing yiisoft/log (dev-master 30d24a5): Cloning 30d24a57eb from cache
 #   - Installing yiisoft/yii-core (dev-master b94f3a3): Cloning b94f3a3066 from cache
 #   - Installing yiisoft/yii-swiftmailer (dev-master f07b6d7): Cloning f07b6d7efc from cache
@@ -70,12 +72,13 @@ $ composer require yiisoft/yii-base-web
 # yiisoft/yii-web suggests installing yiisoft/yii2-coding-standards (you can use this package to check for code style issues when contributing to yii)
 # Writing lock file
 # Generating autoload files
-# Assembling config files 
+# Assembling config files
 ```
 
 ## Fixed dependencies
+
 ```bash
-$ composer require symfony/yaml
+composer require symfony/yaml
 # Using version ^4.3@dev for symfony/yaml
 # ./composer.json has been updated
 # Loading composer repositories with package information
@@ -86,7 +89,7 @@ $ composer require symfony/yaml
 # Writing lock file
 # Generating autoload files
 # Assembling config files
-$ composer require ezyang/htmlpurifier
+composer require ezyang/htmlpurifier
 # Using version dev-master for ezyang/htmlpurifier
 # ./composer.json has been updated
 # Loading composer repositories with package information
@@ -96,7 +99,7 @@ $ composer require ezyang/htmlpurifier
 # Writing lock file
 # Generating autoload files
 # Assembling config files
-$ composer require yiisoft/yii2-coding-standards
+composer require yiisoft/yii2-coding-standards
 # Using version dev-master for yiisoft/yii2-coding-standards
 # ./composer.json has been updated
 # Loading composer repositories with package information
@@ -110,12 +113,15 @@ $ composer require yiisoft/yii2-coding-standards
 ```
 
 ## Create public folder and initial file to first run
+
 ```bash
-$ mkdir public
-$ cd public
-$ nano index.php
+mkdir public
+cd public
+nano index.php
 ```
+
 ### index.php
+
 ```bash
 use yii\helpers\Yii;
 use yii\di\Container;
@@ -130,6 +136,7 @@ use hiqdev\composer\config\Builder;
 ```
 
 ## Running project
+
 ```bash
-$ php -S localhost:8080 -t public
+php -S localhost:8080 -t public
 ```

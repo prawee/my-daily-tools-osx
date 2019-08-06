@@ -1,14 +1,16 @@
-## Create environment
+# Create environment
 
-### Check
+## Check
+
 ```bash
-$ cd
-$ pip list
+cd
+pip list
 # nothong autoenv
 ```
 
-### Install
+## Install
+
 ```bash
-$ cd
-$ sudo pip install autoenv
+cd
+sudo pip install autoenv
 ```

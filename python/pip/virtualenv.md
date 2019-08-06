@@ -1,12 +1,14 @@
-## Install Virtualenv
+# Install Virtualenv
 
-### Check
+## Check
+
 ```bash
-$ pip list
+pip list
 # should be nothing
 ```
 
-### Installation
+## Installation
+
 ```bash
-$ sudo pip install virtualenv
+sudo pip install virtualenv
 ```

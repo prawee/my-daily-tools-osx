@@ -1,39 +1,45 @@
-## Knex.js
+# Knex.js
 
-### Installing to global
+## Installing to global
+
 ```bash
-$ npm install -g knex
+npm install -g knex
 ```
 
-### Create knexfile
+## Create knexfile
+
 ```bash
-$ knex init
+knex init
 ```
 
-### How to make migrations
+## How to make migrations
+
 ```bash
 # go to root directory of your project
-$ knex migrate:make <filename>
+knex migrate:make <filename>
 # ./migrations/filename.js
 ```
 
-### How to run migrations
+## How to run migrations
+
 ```bash
 # go to root directory of your project
-$ knex migrate:latest .
+knex migrate:latest .
 # Batch 1 run: 1 migrations
 ```
 
-### How to make seed data
+## How to make seed data
+
 ```bash
 # go to root directory of your project
-$ knex seed:make <filename>
+knex seed:make <filename>
 # ./seeds/filename.js
 ```
 
 ### How to run seeds
+
 ```bash
 # go to root directory of your project
-$ knex seed:run
+knex seed:run
 # Ran 2 seed files
 ```

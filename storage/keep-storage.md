@@ -1,15 +1,17 @@
 #How to keep storage
 
-##NPM
+## NPM
+
 ```bash
-$ npm cache verify
-$ npm cache clean --force
+npm cache verify
+npm cache clean --force
 ```
 
-##Cache
+## Cache
+
 ```bash
-$ sudo du -sh /Library/Caches
-Password: 
+sudo du -sh /Library/Caches
+Password:
 #187M /Library/Caches
 $ sudo rm -rf /Library/Caches/*
 Password:

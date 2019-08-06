@@ -8,6 +8,7 @@ Found command `brew-services` in following places:
 ```
 
 ## Solved
+
 ```bash
-$ brew untap gapple/services
+brew untap gapple/services
 ```

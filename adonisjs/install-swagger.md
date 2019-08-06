@@ -1,16 +1,18 @@
 # How to using Swagger with Adonisjs
 
 ## Installation
+
 ```bash
-$ cd /var/www/adonis-api
-$ adonis install adonis-swagger
+cd /var/www/adonis-api
+adonis install adonis-swagger
 # config/swagger.js
 # public/docs
 ```
 
 ## Configure
+
 ```bash
-$ nano start/app.js
+nano start/app.js
 ```
 
 ```bash
@@ -24,7 +26,9 @@ const providers = [
 ```
 
 ## Usage
+
 Set @swagger tag on your controller
+
 ```bash
 # app/Controllers/Http/Api/v2/UserController.js
 ...
