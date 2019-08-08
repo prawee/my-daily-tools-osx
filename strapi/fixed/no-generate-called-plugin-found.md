@@ -21,7 +21,7 @@ npm link strapi-helper-plugin
 ```bash
 strapi: "3.0.0-beta.13",
 strapi-admin: "3.0.0-beta.13",
-strapi-plugin-users-permissions": "3.0.0-beta.13"
+strapi-plugin-users-permissions: "3.0.0-beta.13"
 ```
 
 ## Reference
