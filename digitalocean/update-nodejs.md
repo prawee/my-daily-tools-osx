@@ -23,3 +23,18 @@ sudo apt-get install -y nodejs
 node -v
 # v10.16.0
 ```
+
+## Upgrade to v.12.x
+
+```bash
+cd
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+apt install nodejs
+```
+
+## Checking version
+
+```bash
+node -v
+#v12.13.0
+```
