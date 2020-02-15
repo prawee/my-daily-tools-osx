@@ -10,6 +10,12 @@ created: src/Entity/CarCategory.php
 created: src/Repository/CarCategoryRepository.php
 ```
 
+or make with sub folder
+
+```bash
+> bin/console make:entity "Car\Brand"
+```
+
 ## Update columns of entity
 
 `src/Entity/CarCategory.php`
