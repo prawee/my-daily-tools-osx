@@ -104,6 +104,15 @@ app_admin_car_category:
 > php bin/console debug:router
 ```
 
+## Checking service container
+
+```bash
+> bin/console debug:container app.controller.car_category
+> bin/console debug:container app.factory.car_category
+> bin/console debug:container app.repository.car_category
+> bin/console debug:container app.manager.car_category
+```
+
 ## Reference
 
 <https://docs.sylius.com/en/1.6/cookbook/entities/custom-model.html>
