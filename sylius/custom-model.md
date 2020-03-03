@@ -20,6 +20,11 @@ or make with sub folder
 
 `src/Entity/CarCategory.php`
 
+## Generate Getter and Setter
+
+1. Click right on your entity `Generate` and `Getters and Setters...`
+2. Click right on your entity `Generate` and `ORM Class`
+
 ## Migration database
 
 ```bash
