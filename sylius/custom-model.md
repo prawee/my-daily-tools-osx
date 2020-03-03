@@ -119,6 +119,10 @@ app_admin_car_category:
 > bin/console debug:container app.manager.car_category
 ```
 
+## Adding translate
+
+Update in `transtations` with `messages.en.yaml` and `messages.th.yaml` or if you want
+
 ## Reference
 
 <https://docs.sylius.com/en/1.6/cookbook/entities/custom-model.html>
