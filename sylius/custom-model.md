@@ -22,9 +22,10 @@ or make with sub folder
 
 ## Generate Getter and Setter
 
-1. Click right on your entity `Generate` and `Getters and Setters...`
+1. Click right on your entity `Generate` and `Getters and Setters...` then choose columns
 2. Click right on your entity `Generate` and `ORM Class`
 3. Make class `implements` from `ResourceInterface`
+4. Click right on your entity `Generate` and `ORM Annotation`
 
 ## Migration database
 
