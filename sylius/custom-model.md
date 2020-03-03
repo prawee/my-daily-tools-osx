@@ -24,6 +24,7 @@ or make with sub folder
 
 1. Click right on your entity `Generate` and `Getters and Setters...`
 2. Click right on your entity `Generate` and `ORM Class`
+3. Make class `implements` from `ResourceInterface`
 
 ## Migration database
 
