@@ -14,6 +14,6 @@ ERROR 1698 (28000): Access denied for user 'root'@'localhost'
 ## Fixed
 
 ```bash
-sudo mysqladmin -u root --password='' password root 
+sudo mysqladmin -u root --password='' password root
 # enter your password
 ```
