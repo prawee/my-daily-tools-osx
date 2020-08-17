@@ -31,3 +31,17 @@ open /Applications/Docker.app
 docker ps
 # CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 ```
+
+## Technical
+
+```bash
+brew list
+#+docker
+```
+
+## Install docker-compose
+
+```bash
+brew search docker-compose
+#+docker-compose, dgbm, libyaml, openssl@1.1, python@3.8, readline, sqlite, xz
+```
