@@ -1,5 +1,11 @@
 # How to create first route or bootstrap
 
+## Remove origin files
+
+```bash
+rm -rf App.js
+```
+
 ## Create folder
 
 ```bash
@@ -9,16 +15,17 @@ mkdir app
 ## Create bootstrap file
 
 ```bash
-nano app/index.js
+nano app/index.tsx
 ```
 
 ```bash
+import React from "react";
 import { View, Text } from "react-native";
 
 const Home = () => {
     return (
         <View>
-            <Text>Home</Text>
+            <Text>Hello world</Text>
         </View>
     )
 }
