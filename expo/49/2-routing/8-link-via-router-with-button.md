@@ -1,4 +1,4 @@
-# Using useRoute for link to another page
+# Using useRoute for link and button to another page
 
 ## Index to Register
 
