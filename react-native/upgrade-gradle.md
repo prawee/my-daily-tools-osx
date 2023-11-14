@@ -1,9 +1,15 @@
 # How to upgrade Gradle
 
+Go to project with react native first!!!
+
+```bash
+cd android
+```
+
 ## Version
 
 ```bash
-./android/gradlew --version
+./gradlew --version
 ```
 
 ```bash
@@ -24,7 +30,7 @@ OS:           Mac OS X 10.16 x86_64
 ## Upgrade
 
 ```bash
-./android/gradlew wrapper --gradle-version 6.0
+./gradlew wrapper --gradle-version 6.0
 ```
 
 ```bash
