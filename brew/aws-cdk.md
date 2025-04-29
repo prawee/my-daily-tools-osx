@@ -27,3 +27,8 @@ Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 > cdk --version
 2.1010.0 (build 6b421db)
 ```
+
+## Uninstall
+```bash
+> arch -arm64 brew uninstall aws-cdk
+```
