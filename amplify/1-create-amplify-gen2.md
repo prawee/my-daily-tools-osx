@@ -1,6 +1,6 @@
 # Create project with `Amplify` Gen2 without `CLI`
 
-## Create on exist project
+## Create new project
 ```sh
 npm create amplify@latest
 
