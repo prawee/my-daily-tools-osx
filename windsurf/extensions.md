@@ -3,3 +3,4 @@
 - DBCode - Database Management (dbcode)
 - REST Client (humao)
 - Docker (ms-azuretools)
+- Prettier - Code formatter
