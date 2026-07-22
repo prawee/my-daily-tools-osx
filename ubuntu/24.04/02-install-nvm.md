@@ -10,12 +10,12 @@ Command 'nvm' not found, but there are 14 similar ones.
 Looking version from https://github.com/nvm-sh/nvm
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.6/install.sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.6/install.sh | bash
 ```
 
 ## Source
 ```sh
-source ~/.bashrc | source /home/ubuntu/.bashrcn
+source ~/.bashrc | source /home/ubuntu/.bashrc
 ```
 
 ## List Remote
