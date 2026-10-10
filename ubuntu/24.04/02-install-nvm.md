@@ -17,6 +17,10 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.6/install.sh | bash
 ```sh
 source ~/.bashrc | source /home/ubuntu/.bashrc
 ```
+sometime may be restart first
+```sh
+sudo reboot
+```
 
 ## List Remote
 ```sh
