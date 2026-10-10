@@ -1,5 +1,7 @@
 # How to install `Docker` on Ubuntu
 
+*** Using No.5 instead***
+
 ## Update first
 ```sh
 sudo apt update
