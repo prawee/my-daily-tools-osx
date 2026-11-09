@@ -1,5 +1,7 @@
 # Create Project with OpenSpec
 
+> Tested with OpenSpec 1.16.1
+
 ## 1. Create project directory
 ```bash
 mkdir my-project
@@ -10,57 +12,55 @@ git init
 ## 2. Initialize OpenSpec
 ```bash
 openspec init
+
+# non-interactive
+openspec init --tools claude
 ```
-- Select the AI tools you use (Claude Code, Cursor, Codex, etc.)
-- OpenSpec generates the `openspec/` directory and the tool-specific slash commands
+Select the AI tools you use (Claude Code, Cursor, Codex, etc.)
 
 ## 3. Generated structure
 ```
 openspec/
-├── specs/       # current specs (source of truth)
-├── changes/     # proposed changes (one folder per change)
-│   └── archive/ # completed changes
-└── project.md   # project conventions and context
-AGENTS.md        # instructions for AI assistants
+├── config.yaml      # project config (schema: spec-driven)
+├── specs/           # current specs (source of truth)
+└── changes/
+    └── archive/     # completed changes
+.claude/             # for Claude Code
+├── commands/opsx/   # slash commands
+└── skills/          # openspec-* skills
 ```
+> `project.md` and `AGENTS.md` are no longer generated. Put project context in `openspec/config.yaml` instead.
 
 ## 4. Fill in project context
-Edit `openspec/project.md` with:
-- Purpose of the project
-- Tech stack
-- Code conventions
-- Testing strategy
-
-Or ask your AI assistant:
-```
-Please read openspec/project.md and help me fill it out with details about my project, tech stack, and conventions
-```
+Edit `openspec/config.yaml` (tech stack, conventions, rules per artifact).
 
 ## 5. Create the first change
-Ask your AI assistant:
 ```
-/openspec:proposal Add user authentication
+/opsx:propose "Add user authentication"
 ```
-This creates `openspec/changes/add-user-authentication/` containing:
-- `proposal.md` — why and what changes
-- `tasks.md` — implementation checklist
-- `specs/` — spec deltas
+Creates `openspec/changes/<change-name>/` with proposal, design, tasks and spec deltas.
 
-## 6. Workflow commands
+## 6. Slash commands (default profile)
+| Command | Purpose |
+|---|---|
+| `/opsx:explore` | explore ideas before proposing |
+| `/opsx:propose` | create a change with all artifacts |
+| `/opsx:apply` | implement the tasks |
+| `/opsx:sync` | sync spec deltas into main specs |
+| `/opsx:archive` | archive a completed change |
+| `/opsx:update` | update an existing change |
+
+More workflows (new, continue, ff, bulk-archive, verify, onboard):
+```bash
+openspec config profile
+```
+
+## 7. CLI commands
 ```bash
 openspec list                 # list active changes
 openspec show <change>        # show change details
 openspec validate <change>    # validate spec formatting
 ```
 
-```
-/openspec:apply <change>      # implement the tasks
-/openspec:archive <change>    # archive after deployment
-```
-
-```bash
-openspec archive <change> --yes   # CLI alternative to archive
-```
-
 ## Existing project
-Run `openspec init` in the project root; existing files are left untouched.
+Run `openspec init` in the project root.
