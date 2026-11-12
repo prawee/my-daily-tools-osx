@@ -43,6 +43,33 @@ npx docsify-cli serve _export/docsify
 ```
 With Claude Code: `/export-docs <target>`.
 
+### Deploy to GitHub Pages
+`/deploy-docs docsify` pushes the current branch (Pages source). `/deploy-docs mkdocs|gitbook` builds the exported site and publishes it to `gh-pages`, asking for confirmation first because it replaces the live site.
+
+### Claude Code skills
+Project skills live in `.claude/skills/`. They run only when typed (`/name`), never automatically.
+
+| Skill | Usage | What it does |
+|---|---|---|
+| `add-doc` | `/add-doc <folder> <topic>` | Writes a new guide in the folder, regenerates `_sidebar.md`, then commits and pushes to `docsify` (live in 1-2 min) |
+| `export-docs` | `/export-docs <docsify\|mkdocs\|gitbook>` | Converts existing content to `_export/<target>/`. Never edits sources, never commits |
+| `deploy-docs` | `/deploy-docs <docsify\|mkdocs\|gitbook>` | Publishes to GitHub Pages: `docsify` pushes the current branch; `mkdocs`/`gitbook` build the export and publish to `gh-pages` (asks first). Then checks build status and HTTP 200 |
+
+Examples:
+```
+/add-doc bun how-to-install-plugin      # write + publish a new guide
+/export-docs mkdocs                     # generate an MkDocs site to preview
+/deploy-docs docsify                    # push the current Docsify site
+/deploy-docs mkdocs                     # build MkDocs and switch Pages to gh-pages
+```
+
+Requirements: `python3`, `git`, and `gh` (GitHub CLI, logged in). `mkdocs build` needs `mkdocs-material`; GitBook builds need `npx honkit`.
+
+Rollback if a deploy switched the site to the wrong source:
+```bash
+gh api -X PUT repos/prawee/my-daily-tools-osx/pages -f "source[branch]=docsify" -f "source[path]=/"
+```
+
 ## Table of Contents
 - [Angular](#angular)(Updated)
     - [Installation CLI](https://github.com/prawee/osx/blob/master/angular/1.installation-cli.md)
