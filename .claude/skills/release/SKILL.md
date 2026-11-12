@@ -40,6 +40,7 @@ This creates the tag and release together. Use `--prerelease` instead of `--late
 ```bash
 git fetch -q --tags
 git rev-parse <version>^{commit}      # must equal the target sha
-gh release view <version> --json url,isLatest,tagName
+gh release view <version> --json url,tagName,targetCommitish,isPrerelease
+gh release list --limit 1                # "Latest" label should be on <version>
 ```
 Report: release URL, tag + commit, and anything in the notes that needs the user's attention. Roll back only if asked: `gh release delete <version> --cleanup-tag`.
