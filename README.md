@@ -54,6 +54,7 @@ Project skills live in `.claude/skills/`. They run only when typed (`/name`), ne
 | `add-doc` | `/add-doc <folder> <topic>` | Writes a new guide in the folder, regenerates `_sidebar.md`, then commits and pushes to `docsify` (live in 1-2 min) |
 | `export-docs` | `/export-docs <docsify\|mkdocs\|gitbook>` | Converts existing content to `_export/<target>/`. Never edits sources, never commits |
 | `deploy-docs` | `/deploy-docs <docsify\|mkdocs\|gitbook>` | Publishes to GitHub Pages: `docsify` pushes the current branch; `mkdocs`/`gitbook` build the export and publish to `gh-pages` (asks first). Then checks build status and HTTP 200 |
+| `release` | `/release <version>` | Creates a tag and GitHub release from `master` with generated notes (e.g. `/release v2.1.0`). Stops if the tag exists or work is not merged to `master` |
 
 Examples:
 ```
@@ -61,6 +62,7 @@ Examples:
 /export-docs mkdocs                     # generate an MkDocs site to preview
 /deploy-docs docsify                    # push the current Docsify site
 /deploy-docs mkdocs                     # build MkDocs and switch Pages to gh-pages
+/release v2.1.0                         # tag + GitHub release with notes
 ```
 
 Requirements: `python3`, `git`, and `gh` (GitHub CLI, logged in). `mkdocs build` needs `mkdocs-material`; GitBook builds need `npx honkit`.
