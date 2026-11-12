@@ -30,21 +30,25 @@ yo --version
 ```
 
 ## Install a generator
-Generators are published as `generator-<name>`.
+Generators are published as `generator-<name>`. There are two ways to use one.
 
+### Option 1: global install
 ```bash
 # example: generator-code (VS Code extension)
 npm install -g generator-code
-```
 
-## Run a generator
-```bash
 yo code
 ```
 
 List installed generators / run interactively:
 ```bash
 yo
+```
+
+### Option 2: without global install (npx)
+Nothing is installed globally, `yo` and the generator are fetched to a temporary cache.
+```bash
+npx --package yo --package generator-code yo code
 ```
 
 ## Doctor (troubleshoot)

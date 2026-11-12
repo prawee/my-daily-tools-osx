@@ -741,6 +741,7 @@
   - [How to recheck/upgrade your dependencies](/yarn/upgrade-all.md)
 - **yeoman**
   - [Install Yeoman CLI](/yeoman/000-install-cli.md)
+  - [Create Project with Yeoman](/yeoman/001-create-project.md)
 - **yiiframework**
   - **yii2**
     - [How to create project with Yii2](/yiiframework/yii2/1.create-project-with-advanced-template.md)
